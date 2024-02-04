@@ -1,5 +1,7 @@
 # h3
 
+> Temporary Kvarn fork to be removed when real Quinn 0.11 publishes with rustls 0.22 support.
+
 An async HTTP/3 implementation.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)

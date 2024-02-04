@@ -1,13 +1,13 @@
 [package]
-name = "h3-quinn"
-version = "0.0.5"
+name = "kvarn-h3-quinn"
+version = "0.0.6-alpha1"
 rust-version = "1.63"
 authors = ["Jean-Christophe BEGUE <jc.begue@pm.me>"]
 edition = "2018"
 documentation = "https://docs.rs/h3-quinn"
 repository = "https://github.com/hyperium/h3"
 readme = "../README.md"
-description = "QUIC transport implementation based on Quinn."
+description = "Temporary Kvarn fork: QUIC transport implementation based on Quinn."
 keywords = ["http3", "quic", "h3"]
 categories = ["network-programming", "web-programming"]
 license = "MIT"
@@ -15,10 +15,10 @@ license = "MIT"
 [dependencies]
 h3 = { version = "0.0.4", path = "../h3" }
 bytes = "1"
-quinn = { version = "0.10", default-features = false, features = [
+quinn = { version = "0.11.0-alpha1", package = "kvarn-quinn", default-features = false, features = [
     "futures-io",
 ] }
-quinn-proto = { version = "0.10", default-features = false }
+quinn-proto = { version = "0.11.0-alpha1", package = "kvarn-quinn-proto", default-features = false }
 tokio-util = { version = "0.7.9" }
 futures = { version = "0.3.28" }
 tokio = { version = "1", features = ["io-util"], default-features = false }
